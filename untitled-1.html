@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SAAC</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Advanced-Pricing-Cards.css">
+    <link rel="stylesheet" href="assets/css/Dark-Mode-Switch.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login-.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch-toggle-switch.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switches.css">
+</head>
+
+<body>
+    <div class="login-card"><img class="profile-img-card" src="assets/img/avatar_2x.png">
+        <p class="profile-name-card"> </p>
+        <div class="text-center">
+            <div class="btn-group" role="group"><button class="btn btn-success" id="btn-estudiante" type="button">ESTUDIANTE</button><button class="btn btn-secondary" id="btn-maestros" type="button">MAESTRO</button></div>
+        </div>
+        <div id="login-form-student">
+            <form class="form-signin" method="post" action="/login_alumno.html"><span class="reauth-email"> </span><input class="form-control" type="email" id="inputEmail" required="" placeholder="MATRICULA" autofocus="" name="matricula"><input class="form-control" type="password" id="inputPassword" required="" placeholder="CURP" name="curp">
+                <div class="checkbox">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" name="check"><label class="form-check-label" for="formCheck-1">Mantenerme conectado</label></div>
+                </div><button class="btn btn-primary btn-lg d-block btn-signin w-100" type="submit">Iniciar sesión&nbsp;</button>
+            </form><a class="forgot-password" href="#">¿Olvidaste tu Matricula o CURP?</a>
+        </div>
+        <div id="login-form-teacher" class="hidden">
+            <form class="form-signin" method="post" action="/login_teacher.php" target="_self"><span class="reauth-email"> </span><input class="form-control" type="email" id="inputEmail-1" required="" placeholder="Cuenta de usuario" autofocus=""><input class="form-control" type="password" id="inputPassword-1" required="" placeholder="CONTRASEÑA"><select class="form-select">
+                    <optgroup label="Entidad federativa">
+                        <option value="1">OF. NACIONALES</option>
+                        <option value="13">This is item 2</option>
+                        <option value="14">This is item 3</option>
+                    </optgroup>
+                </select>
+                <div class="checkbox">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Remember me</label></div>
+                </div><button class="btn btn-primary btn-lg d-block btn-signin w-100" type="submit">Sign in</button>
+            </form><a class="forgot-password" href="#">¿Olvidaste tu Contraseña?</a>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Advanced-Pricing-Cards-main.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/Dark-Mode-Switch-darkmode.js"></script>
+</body>
+
+</html>
